@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #050505;
-    --text-primary: #ffffff;
-    --text-secondary: #888888;
-    --accent: #e0e0e0;
-    --border-color: rgba(255, 255, 255, 0.1);
-    --glow: rgba(255, 255, 255, 0.05);
+    --bg-color: #ffffff;
+    --text-primary: #111111;
+    --text-secondary: #666666;
+    --accent: #ff0033; /* Electric Red */
+    --border-color: rgba(0, 0, 0, 0.1);
+    --glow: rgba(255, 0, 51, 0.2);
 }
 
 * {
@@ -63,7 +63,7 @@ header {
     border: 1px solid var(--border-color);
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(10px);
 }
 
@@ -84,7 +84,7 @@ header {
     letter-spacing: -2px;
     line-height: 1.1;
     margin-bottom: 1rem;
-    background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+    background: linear-gradient(180deg, #111 0%, #555 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -125,15 +125,16 @@ header {
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(10px);
 }
 
 .social-link:hover {
-    background: var(--text-primary);
-    color: var(--bg-color);
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5), 0 0 20px var(--glow);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 0 20px var(--glow);
 }
 
 .social-link .icon {
@@ -145,7 +146,7 @@ header {
 footer {
     padding-top: 2rem;
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     border-top: 1px solid var(--border-color);
 }
 
